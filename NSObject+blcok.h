@@ -13,5 +13,7 @@ typedef void(^buttonHandlerBlcok)(id sender);
 
 @interface NSObject (blcok)
 @property (nonatomic, copy) buttonHandlerBlcok eventHandler;
+@property (nonatomic, strong) NSMutableDictionary * evenDict;
 
+-(void)addHandAction:(void(^)(id sender ))handler;
 @end
